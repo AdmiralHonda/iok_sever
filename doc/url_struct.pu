@@ -1,0 +1,17 @@
+@startuml url_struct
+[*] --> blog
+blog --> blog.category
+blog --> blog.tag
+blog --> blog.user
+blog.category --> blog.category.slug
+
+[*] --> auth.login
+auth.login --> auth.success
+auth.login --> auth.false 
+
+[*] --> article.user
+auth.success --> article.user
+
+
+
+@enduml

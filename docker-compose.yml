@@ -1,0 +1,6 @@
+version: '3'
+services:
+  iok_main:
+    build: ./iok_web
+    ports: 
+      - "9090:8080"
