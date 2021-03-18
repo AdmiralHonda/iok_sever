@@ -13,5 +13,12 @@ func main() {
 			"title": "Main website",
 		})
 	})
+
+	r.GET("/auth/login", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "auth.tmpl", gin.H{
+			"title": "Authentication",
+		})
+	})
+
 	r.Run()
 }

@@ -11,7 +11,11 @@ auth.login --> auth.false
 
 [*] --> article.user
 auth.success --> article.user
-
-
+article.user --> article.user.category
+article.user --> article.user.tag
+article.user --> article.user.add
+article.user --> article.user.edit
+article.user.category --> article.user.edit
+article.user.tag --> article.user.edit
 
 @enduml
